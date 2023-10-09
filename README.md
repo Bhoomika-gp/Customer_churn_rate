@@ -1,21 +1,20 @@
 # Customer_churn_rate
-No-Churn Telecom is an established Telecom operator in Europe with more than a decade in Business. Due to new players in the market, telecom industry has become very competitive and retaining customers becoming a challenge. In spite of No-Churn initiatives of reducing tariffs and promoting more offers, the churn rate (percentage of customers migrating to competitors) is well above 10%. No-Churn wants to explore possibility of Machine Learning to help with following use cases to retain competitive edge in the industry.
+# Overview
+This is a machine learning project to predict customer churn in a telecom company. The goal is to build a model that can accurately identify customers who are likely to leave the company so that proactive steps can be taken to retain them. The project also aims at finding churn risk score and factors influencing churning of customers.
 
-In this project, we are addressing a classification problem known as customer churn prediction. Our goal is to develop a model that can accurately classify customers as either churners or non-churners.
+The project involves data cleaning and preprocessing, exploratory data analysis, feature selection, model training and evaluation, and deployment of the model as a web application using Flask.
+# Dataset
+The dataset used for this project is the Telecom Customer Churn dataset, which can was provided by DataMites Institute. It contains information about customers, such as their account length, international plan, voicemail messages, day and night calls, and charges, as well as dependent variable i.e, whether they churned or not.
 
-Considering the imbalanced nature of the data, where churn events are less frequent compared to non-churn events, we have chosen the F1 score as our primary performance metric. The F1 score balances precision and recall, allowing us to evaluate the model's ability to identify churners while minimizing false predictions.
+# Requirements
+The project requires the following libraries:
 
-By focusing on the F1 score, we aim to develop a robust churn prediction model that accurately identifies churners and provides No-Churn Telecom with the insights needed to implement tailored retention strategies. This approach will help improve customer loyalty and satisfaction while maximizing the effectiveness of resource allocation for retention campaigns.
-
-# PROJECT GOAL
-Help No-Churn with their use cases with ML
-
-Understanding the variables that are influencing the customers to migrate.
-Creating Churn risk scores that can be indicative to drive retention campaigns.
-Introduce new predicting variable “CHURN-FLAG” with values YES(1) or NO(0) so that email campaigns with lucrative offers can be targeted to Churn YES customers.
-This will help to identify possible CHURN-FLAG YES customers and provide more attention in customer touch point areas, including customer care support, request fulfilment, auto categorizing tickets as high priority for quick resolutions any questions they may have etc
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+flask
 
 # Result:
-The trained XGBoost model achieved a high predictive accuracy in identifying churn customers.
-We evaluated the model's performance using metrics such as accuracy, precision, recall, and F1-score, with a particular focus on the F1-score due to the imbalanced nature of the dataset.
-The model demonstrated promising results with f1 score of 97%, indicating its ability to accurately identify potential churn customers.
+The model achieved an f1 score of 97%, indicating its ability to accurately predict customer churn. The top five features that influence customer churn are account length, customer service calls, international plan, voicemail messages, and day charge.
