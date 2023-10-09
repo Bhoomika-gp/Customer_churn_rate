@@ -1,4 +1,4 @@
-# Customer_churn_rate
+# Customer Churn Rate Prediction
 # Overview
 This is a machine learning project to predict customer churn in a telecom company. The goal is to build a model that can accurately identify customers who are likely to leave the company so that proactive steps can be taken to retain them. The project also aims at finding churn risk score and factors influencing churning of customers.
 
