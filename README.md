@@ -9,12 +9,12 @@ The dataset used for this project is the Telecom Customer Churn dataset, which c
 # Requirements
 The project requires the following libraries:
 
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-flask
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
+* xgboost
 
 # Result:
 The model achieved an f1 score of 97%, indicating its ability to accurately predict customer churn. The top five features that influence customer churn are account length, customer service calls, international plan, voicemail messages, and day charge.
